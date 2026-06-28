@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 512 512">
+
+<defs>
+
+<linearGradient id="g1"
+x1="0%"
+y1="0%"
+x2="100%"
+y2="100%">
+
+<stop offset="0%"
+stop-color="#ff7aa2"/>
+
+<stop offset="50%"
+stop-color="#ff2965"/>
+
+<stop offset="100%"
+stop-color="#d90045"/>
+
+</linearGradient>
+
+</defs>
+
+<path fill="url(#g1)"
+d="M471.7 73.8C417.8 19.9 330.6 19.9 276.7 73.8L256 94.5l-20.7-20.7C181.4 19.9 94.2 19.9 40.3 73.8-13.4 127.5-13.4 214.7 40.3 268.4l195.5 195.5c11.3 11.3 29.6 11.3 40.9 0l195.5-195.5c53.7-53.7 53.7-140.9-.5-194.6z"/>
+
+</svg>
