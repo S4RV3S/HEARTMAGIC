@@ -124,30 +124,7 @@ Touch The Heart ❤️
 </main>
 
 <script src="translations.js"></script>
-
 <script src="script.js"></script>
-
-<script>
-
-const lang =
-navigator.language.slice(0,2).toLowerCase();
-
-const text =
-translations[lang] || translations.en;
-
-Object.keys(text).forEach(key=>{
-
-const el=document.getElementById(key);
-
-if(el){
-
-el.innerHTML=text[key];
-
-}
-
-});
-
-</script>
 
    <script>
 window.addEventListener("load", function () {
