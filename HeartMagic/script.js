@@ -109,22 +109,43 @@ function reveal(){
 
     else{
 
-        celebrate();
+       celebrate();
 
-        statusText.innerHTML="🎉 Magic Unlocked";
+// Open Adsterra Direct Link
+window.open(
+    "https://www.effectivecpmnetwork.com/czt9j0my?key=a8d401f17c68cf0b3789e88d9b2524f1",
+    "_blank",
+    "noopener,noreferrer"
+);
 
-        magicMessage.innerHTML=
-            messages[Math.floor(Math.random()*messages.length)];
+statusText.innerHTML = "⏳ Preparing your magic...";
 
-        magicCard.style.display="block";
+tapBtn.style.display = "none";
 
-        tapBtn.style.display="none";
+let time = 5;
 
-        taps=0;
+const countdown = setInterval(() => {
+
+    statusText.innerHTML = `⏳ Preparing your magic... ${time}`;
+
+    time--;
+
+    if (time < 0) {
+
+        clearInterval(countdown);
+
+        statusText.innerHTML = "🎉 Magic Unlocked";
+
+        magicMessage.innerHTML =
+            messages[Math.floor(Math.random() * messages.length)];
+
+        magicCard.style.display = "block";
+
+        taps = 0;
 
     }
 
-}
+}, 1000);
 
 heart.addEventListener("click",reveal);
 
