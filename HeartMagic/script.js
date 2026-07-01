@@ -150,6 +150,8 @@ else {
 
 }
 
+}
+
 heart.addEventListener("click",reveal);
 
 tapBtn.addEventListener("click",reveal);
