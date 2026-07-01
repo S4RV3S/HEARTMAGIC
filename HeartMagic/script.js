@@ -107,45 +107,48 @@ function reveal(){
 
     }
 
-    else{
+else {
 
-       celebrate();
+    taps = 0;
 
-// Open Adsterra Direct Link
-window.open(
-    "https://www.effectivecpmnetwork.com/czt9j0my?key=a8d401f17c68cf0b3789e88d9b2524f1",
-    "_blank",
-    "noopener,noreferrer"
-);
+    celebrate();
 
-statusText.innerHTML = "⏳ Preparing your magic...";
+    window.open(
+        "https://www.effectivecpmnetwork.com/czt9j0my?key=a8d401f17c68cf0b3789e88d9b2524f1",
+        "_blank",
+        "noopener,noreferrer"
+    );
 
-tapBtn.style.display = "none";
+    tapBtn.style.display = "none";
 
-let time = 5;
-
-const countdown = setInterval(() => {
+    let time = 5;
 
     statusText.innerHTML = `⏳ Preparing your magic... ${time}`;
 
-    time--;
+    const countdown = setInterval(() => {
 
-    if (time < 0) {
+        time--;
 
-        clearInterval(countdown);
+        if (time > 0) {
 
-        statusText.innerHTML = "🎉 Magic Unlocked";
+            statusText.innerHTML = `⏳ Preparing your magic... ${time}`;
 
-        magicMessage.innerHTML =
-            messages[Math.floor(Math.random() * messages.length)];
+        } else {
 
-        magicCard.style.display = "block";
+            clearInterval(countdown);
 
-        taps = 0;
+            statusText.innerHTML = "🎉 Magic Unlocked";
 
-    }
+            magicMessage.innerHTML =
+                messages[Math.floor(Math.random() * messages.length)];
 
-}, 1000);
+            magicCard.style.display = "block";
+
+        }
+
+    }, 1000);
+
+}
 
 heart.addEventListener("click",reveal);
 
