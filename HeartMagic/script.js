@@ -113,11 +113,11 @@ else {
 
     celebrate();
 
-    window.open(
-        "https://www.effectivecpmnetwork.com/czt9j0my?key=a8d401f17c68cf0b3789e88d9b2524f1",
-        "_blank",
-        "noopener,noreferrer"
-    );
+  window.open(
+    DESTINATION_URL,
+    "_blank",
+    "noopener,noreferrer"
+);
 
     tapBtn.style.display = "none";
 
